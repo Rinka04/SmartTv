@@ -1,14 +1,18 @@
 import java.util.Scanner;
 
 public class SmartTv {
-   Scanner sc = new Scanner (System.in);
+    Scanner sc = new Scanner(System.in);
     boolean ligada = false;
-    int canal, volume;
+    int canal, volume, canalPad;
     
-
-    public void mudarCanal(int novoCanal){
-        canal = novoCanal;
+    public void mudarCanal() {
+        canal = 0;
     }
+
+    public void canalPadrao(){
+        canalPad = 7;
+    }
+
 
     public void aumentarCanal() {
         canal++;
@@ -26,6 +30,11 @@ public class SmartTv {
         desligada = false;
     }
 
+    public void volumePadrao() {
+        volume = 10;
+
+    }
+
     public void aumentarVolume() {
         volume++;
     }
@@ -33,4 +42,5 @@ public class SmartTv {
     public void diminuirVolume() {
         volume--;
     }
+
 }
